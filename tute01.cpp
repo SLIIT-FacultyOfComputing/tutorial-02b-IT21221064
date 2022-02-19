@@ -1,4 +1,3 @@
-
 /*Exercise 1 - Calculations
 
 Convert the C program given below which converts a length given in cm to inches to a C++ program.
@@ -18,13 +17,13 @@ printf("Hello World") --> std::cout << "Hello World";
 */
 
 
-#include <stdio.h>
+#include <iostream>
 int main() 
 {
     float cm, inches;
-    printf("Enter a length in cm : ");
-    scanf("%f",&cm);
-    inches = cm / 2.54;
-    printf("Length in inches is %f \n", inches);
-    return 0;
+    std::cout<<"Enter a length in cm : ";   //display "Enter a length in cm : "
+    std::cin>>cm;              //read lenght in cm
+    inches = cm / 2.54;     //converting cm to inches
+    std::cout<<"Length in inches is "<< inches ;   //display lenght in inches
+    return 0;  //end of the main function
 }  
